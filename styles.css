@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: rgb(24, 24, 33);
+    color: white;
+  }
+
+h1 {
+    text-align: center;
+    color: white;
+  }
+
+
+.container {
+    margin-top: 40px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    padding: 30px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1050px) {
+    .container {
+        width: 90%; 
+        padding: 10px;
+    }
+}
+  
+.form-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+  
+form {
+    display: flex;
+    justify-content: center;
+}
+  
+input {
+    padding: 15px 10px;
+    outline: none;
+    width: 60%;
+    font-size: 1em;
+    font-weight: bold;
+}
+  
+.list-container {
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+    border: 2px solid white;
+}
+  
+ul {
+    padding: 0;
+    margin: 0;
+}
+  
+  li {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    border-bottom: 2px solid white;
+    
+  }
+  
+  li p {
+    padding: 0 50px;
+    width: 100%;
+  }
+  
+.btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color:rgb(24, 24, 33);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    width: 10%;
+    font-size: 1.2em;
+    border-left: 3px solid white;
+}
+  
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: crimson;
+}
+
+.btn-check {
+    margin-left: auto;
+    border: 2px solid white;
+    margin: 15px;
+    border-radius: 50%;
+    background-color:rgb(24, 24, 33);
+    width: 5%;
+}
+  
+.btn-check:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+/* Aplica el estilo tachado y bajar la opacidad a las tareas completadas */
+.checked {
+    text-decoration: line-through; 
+    opacity: .2;
+}
+
+.clicked {
+    background-color: white;
+  }
+  
+.btn-add {
+    padding: 5px 15px;
+    border: 2px white solid;
+    color: white;
+    background-color: rgb(24, 24, 33);
+    font-size: 1.6rem;
+    font-weight: bold;
+    outline: none;
+    margin: 0;
+}
+  
+  .btn-add:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+  
+.empty {
+    color: white;
+    display: flex;
+    justify-content: center; 
+}
