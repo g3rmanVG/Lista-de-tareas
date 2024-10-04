@@ -1,17 +1,18 @@
+/* Estilos generales para el body */
 body {
     margin: 0;
     padding: 0;
     font-size: 18px;
     background-color: rgb(24, 24, 33);
     color: white;
-  }
+}
 
 h1 {
     text-align: center;
     color: white;
-  }
+}
 
-
+/* Container principal para centrar y dar margen al contenido */
 .container {
     margin-top: 40px;
     width: 50%;
@@ -21,20 +22,22 @@ h1 {
     padding: 30px;
 }
 
-/* Media query para pantallas pequeñas */
+/* Media query para pantallas pequeñas (responsive) */
 @media (max-width: 1050px) {
     .container {
         width: 90%; 
         padding: 10px;
     }
 }
-  
+ 
+/* Formulario centrado */
 .form-container {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-  
+
+/* Estilos para centrar el contenido del formulario */
 form {
     display: flex;
     justify-content: center;
@@ -48,13 +51,16 @@ input {
     font-weight: bold;
 }
   
+
+/* Contenedor de la lista de tareas */
 .list-container {
     width: 100%;
     color: white;
     margin-top: 20px;
     border: 2px solid white;
 }
-  
+
+/* Eliminar los márgenes y el padding por defecto de la lista */
 ul {
     padding: 0;
     margin: 0;
@@ -85,7 +91,8 @@ ul {
     font-size: 1.2em;
     border-left: 3px solid white;
 }
-  
+
+/* Efecto hover para el botón de eliminar */
 .btn-delete:hover {
     cursor: pointer;
     background-color: crimson;
@@ -99,18 +106,20 @@ ul {
     background-color:rgb(24, 24, 33);
     width: 5%;
 }
-  
+
+/* Efecto hover para el botón de check */
 .btn-check:hover {
     cursor: pointer;
     opacity: .5;
 }
 
-/* Aplica el estilo tachado y bajar la opacidad a las tareas completadas */
+/* Aplicar el estilo tachado y bajar la opacidad a las tareas completadas */
 .checked {
     text-decoration: line-through; 
     opacity: .2;
 }
 
+/* Estilo para los botones de check cuando están activados */
 .clicked {
     background-color: white;
   }
@@ -125,12 +134,14 @@ ul {
     outline: none;
     margin: 0;
 }
-  
-  .btn-add:hover {
+
+/* Efecto hover para el botón de agregar */
+.btn-add:hover {
     cursor: pointer;
     background-color: lightseagreen;
 }
-  
+
+/* Mensaje cuando la lista está vacía */
 .empty {
     color: white;
     display: flex;
